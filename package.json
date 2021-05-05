@@ -1,0 +1,37 @@
+{
+  "name": "todolist-frontend",
+  "version": "1.0.0",
+  "description": "Front end for todolist app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harounach/todolist-frontend.git"
+  },
+  "keywords": [
+    "Todo",
+    "list"
+  ],
+  "author": "Haroun Ach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harounach/todolist-frontend/issues"
+  },
+  "homepage": "https://github.com/harounach/todolist-frontend#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
