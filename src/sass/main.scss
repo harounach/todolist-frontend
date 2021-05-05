@@ -1,7 +1,21 @@
-$body-color: green;
-$body-background: green;
+// <abstracts>
+// 01-variables
+// 02-functions
+// 03-mixins
+// 04-placeholders
+// 05-animations
+@use "./abstracts/variables" as vars;
 
-body {
-  color: $body-color;
-  background-color: $body-background;
-}
+// <vendors>
+
+// <base>
+// 01-base
+// 02-reset
+// 03-typography
+@use "./base/base";
+
+// <components>
+
+// <pages>
+
+// <themes>
