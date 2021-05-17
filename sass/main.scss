@@ -21,6 +21,8 @@
 @use "./components/header";
 @use "./components/footer";
 @use "./components/todoapp";
+@use "./components/form";
+@use "./components/button";
 
 // <pages>
 @use "./pages/home";

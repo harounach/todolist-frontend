@@ -24,28 +24,37 @@
             <div class="todoapp__section">
               <!-- form -->
               <form class="form">
-                <h2 class="form__label-wrapper">
-                  <label htmlFor="new-todo-input" class="form__label">
-                    What needs to be done?
-                  </label>
-                </h2>
-                <input
-                  type="text"
-                  id="form__input-control"
-                  class="form__input-control"
-                  name="text"
-                />
-                <button type="submit" class="btn btn--primary btn--lg">
-                  Add
-                </button>
+                <div class="form__section">
+                  <h2 class="form__label-wrapper">
+                    <label htmlFor="new-todo-input" class="form__label">
+                      What needs to be done?
+                    </label>
+                  </h2>
+                </div>
+                <div class="form__section">
+                  <input
+                    type="text"
+                    id="form__input-control"
+                    class="form__input-control"
+                    name="text"
+                    autocomplete="off"
+                  />
+                  <button type="submit" class="btn btn--primary btn--form">
+                    Add
+                  </button>
+                </div>
               </form>
             </div>
             <!-- filter buttns -->
             <div class="todoapp__section">
               <div class="filters btn-group">
-                <button class="btn btn--filter btn--active">All</button>
-                <button class="btn btn--filter">Active</button>
-                <button class="btn btn--filter">Completed</button>
+                <button class="btn btn--filter btn--active btn--margin-right-s">
+                  All
+                </button>
+                <button class="btn btn--filter btn--margin-s">Active</button>
+                <button class="btn btn--filter btn--margin-left-s">
+                  Completed
+                </button>
               </div>
             </div>
 

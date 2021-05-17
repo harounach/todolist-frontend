@@ -9,14 +9,14 @@
   padding: 1rem 1.5rem;
   background-color: vars.$surface-color;
   // todoapp__section
-  .todoapp__section {
+  &__section {
     width: 100%;
     padding: 0;
     margin: 0;
   }
 
   // todoapp__counter
-  .todoapp__counter {
+  &__counter {
     color: type.$text-high-color;
   }
 }

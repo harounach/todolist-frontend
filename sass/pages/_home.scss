@@ -8,12 +8,12 @@
   align-items: center;
 
   // page__header
-  .page__header {
+  &__header {
     flex-shrink: 0;
   }
 
   // page__main
-  .page__main {
+  &__main {
     width: 100%;
     flex-grow: 1;
     padding: 1rem;
@@ -22,7 +22,7 @@
   }
 
   // page__footer
-  .page__footer {
+  &__footer {
     flex-shrink: 0;
     margin-top: auto;
   }
