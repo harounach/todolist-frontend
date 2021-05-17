@@ -5,33 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TodoList</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div id="root">
+    <div id="root" class="root">
       <div class="page">
         <header class="page__header header">
-          <h1>TodoList</h1>
+          <h1 class="title">TodoList</h1>
         </header>
         <main class="page__main main">
-          <div class="page__card-wrapper">
+          <div class="page__todo-wrapper">
             <!-- todoapp -->
             <div class="todoapp">
               <div class="todoapp__form">
                 <!-- form -->
                 <form class="form">
-                  <h2 className="form__label-wrapper">
-                    <label htmlFor="new-todo-input" className="form__label">
+                  <h2 class="form__label-wrapper">
+                    <label htmlFor="new-todo-input" class="form__label">
                       What needs to be done?
                     </label>
                   </h2>
                   <input
                     type="text"
                     id="form__input-control"
-                    className="form__input-control"
+                    class="form__input-control"
                     name="text"
                   />
-                  <button type="submit" className="btn btn--primary btn--lg">
+                  <button type="submit" class="btn btn--primary btn--lg">
                     Add
                   </button>
                 </form>
@@ -49,7 +54,7 @@
                 <li class="todo">
                   <div class="todo__view">
                     <input id="todo__checkbox" type="checkbox" />
-                    <label className="todo-label" htmlFor="todo__checkbox">
+                    <label class="todo-label" htmlFor="todo__checkbox">
                       Eat
                     </label>
                     <div class="btn-group">
@@ -60,7 +65,7 @@
                           alt=""
                         />
                         Edit
-                        <span className="visually-hidden">Eat</span>
+                        <span class="visually-hidden">Eat</span>
                       </button>
                       <button class="btn btn--danger">
                         <img
@@ -69,7 +74,7 @@
                           alt=""
                         />
                         Delete
-                        <span className="visually-hidden">Eat</span>
+                        <span class="visually-hidden">Eat</span>
                       </button>
                     </div>
                   </div>
@@ -95,13 +100,13 @@
                         <div class="btn-group">
                           <button class="btn">
                             Cancel
-                            <span className="visually-hidden">
+                            <span class="visually-hidden">
                               renaming Sleep
                             </span>
                           </button>
                           <button class="btn">
                             Save
-                            <span className="visually-hidden">
+                            <span class="visually-hidden">
                               new name for Sleep
                             </span>
                           </button>
@@ -115,7 +120,7 @@
                 <li class="todo">
                   <div class="todo__view">
                     <input id="todo__checkbox" type="checkbox" />
-                    <label className="todo-label" htmlFor="todo__checkbox">
+                    <label class="todo-label" htmlFor="todo__checkbox">
                       Run
                     </label>
                     <div class="btn-group">
@@ -126,7 +131,7 @@
                           alt=""
                         />
                         Edit
-                        <span className="visually-hidden">Run</span>
+                        <span class="visually-hidden">Run</span>
                       </button>
                       <button class="btn btn--danger">
                         <img
@@ -135,7 +140,7 @@
                           alt=""
                         />
                         Delete
-                        <span className="visually-hidden">Run</span>
+                        <span class="visually-hidden">Run</span>
                       </button>
                     </div>
                   </div>
@@ -145,7 +150,7 @@
                 <li class="todo">
                   <div class="todo__view">
                     <input id="todo__checkbox" type="checkbox" />
-                    <label className="todo-label" htmlFor="todo__checkbox">
+                    <label class="todo-label" htmlFor="todo__checkbox">
                       Code
                     </label>
                     <div class="btn-group">
@@ -156,7 +161,7 @@
                           alt=""
                         />
                         Edit
-                        <span className="visually-hidden">Code</span>
+                        <span class="visually-hidden">Code</span>
                       </button>
                       <button class="btn btn--danger">
                         <img
@@ -165,7 +170,7 @@
                           alt=""
                         />
                         Delete
-                        <span className="visually-hidden">Code</span>
+                        <span class="visually-hidden">Code</span>
                       </button>
                     </div>
                   </div>
