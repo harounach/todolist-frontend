@@ -85,7 +85,7 @@
   // todo__edit
   &__edit {
     width: 100%;
-    margin: 1rem 0;
+    margin: 0;
     padding: 0;
   }
 
@@ -120,7 +120,7 @@
     height: 3rem;
     border: 3px solid vars.$primary-color;
     padding-left: 0.5rem;
-    margin: 0 0.5rem 0 0;
+    margin: 0;
     outline: none;
 
     &:focus {
