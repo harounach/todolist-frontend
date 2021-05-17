@@ -22,7 +22,7 @@
           <div class="page__todo-wrapper">
             <!-- todoapp -->
             <div class="todoapp">
-              <div class="todoapp__form">
+              <div class="todoapp__section">
                 <!-- form -->
                 <form class="form">
                   <h2 class="form__label-wrapper">
@@ -42,140 +42,152 @@
                 </form>
               </div>
               <!-- filter buttns -->
-              <div class="filters btn-group">
-                <button class="btn btn--filter btn--active">All</button>
-                <button class="btn btn--filter">Active</button>
-                <button class="btn btn--filter">Completed</button>
+              <div class="todoapp__section">
+                <div class="filters btn-group">
+                  <button class="btn btn--filter btn--active">All</button>
+                  <button class="btn btn--filter">Active</button>
+                  <button class="btn btn--filter">Completed</button>
+                </div>
               </div>
+
               <!-- Todo counter -->
-              <h2 class="todo-counter">4 tasks remaining</h2>
-              <ul class="todolist">
-                <!-- Todo 1 -->
-                <li class="todo">
-                  <div class="todo__view">
-                    <input id="todo__checkbox" type="checkbox" />
-                    <label class="todo-label" htmlFor="todo__checkbox">
-                      Eat
-                    </label>
-                    <div class="btn-group">
-                      <button class="btn">
-                        <img
-                          class="btn__icon"
-                          src="./images/edit_white_24dp.svg"
-                          alt=""
-                        />
-                        Edit
-                        <span class="visually-hidden">Eat</span>
-                      </button>
-                      <button class="btn btn--danger">
-                        <img
-                          class="btn__icon"
-                          src="./images/delete_white_24dp.svg"
-                          alt=""
-                        />
-                        Delete
-                        <span class="visually-hidden">Eat</span>
-                      </button>
-                    </div>
-                  </div>
-                </li>
+              <div class="todoapp__section">
+                <h2 class="todoapp__counter">4 tasks remaining</h2>
+              </div>
 
-                <!-- Todo 2 -->
-                <li class="todo">
-                  <div class="todo__edit">
-                    <form class="todo__form">
-                      <div class="todo__form-section">
-                        <label for="todo__form-input" class="todo__form-label">
-                          New name for Sleep
-                        </label>
+              <!-- todolist -->
+              <div class="todoapp__section">
+                <ul class="todolist">
+                  <!-- Todo 1 -->
+                  <li class="todo">
+                    <div class="todo__view">
+                      <input id="todo__checkbox" type="checkbox" />
+                      <label class="todo-label" htmlFor="todo__checkbox">
+                        Eat
+                      </label>
+                      <div class="btn-group">
+                        <button class="btn">
+                          <img
+                            class="btn__icon"
+                            src="./images/edit_white_24dp.svg"
+                            alt=""
+                          />
+                          Edit
+                          <span class="visually-hidden">Eat</span>
+                        </button>
+                        <button class="btn btn--danger">
+                          <img
+                            class="btn__icon"
+                            src="./images/delete_white_24dp.svg"
+                            alt=""
+                          />
+                          Delete
+                          <span class="visually-hidden">Eat</span>
+                        </button>
                       </div>
-                      <div class="todo__form-section">
-                        <input
-                          id="todo__form-input"
-                          type="text"
-                          class="todo__form-input"
-                        />
-                      </div>
-                      <div class="todo__form-section">
-                        <div class="btn-group">
-                          <button class="btn">
-                            Cancel
-                            <span class="visually-hidden">
-                              renaming Sleep
-                            </span>
-                          </button>
-                          <button class="btn">
-                            Save
-                            <span class="visually-hidden">
-                              new name for Sleep
-                            </span>
-                          </button>
+                    </div>
+                  </li>
+
+                  <!-- Todo 2 -->
+                  <li class="todo">
+                    <div class="todo__edit">
+                      <form class="todo__form">
+                        <div class="todo__form-section">
+                          <label
+                            for="todo__form-input"
+                            class="todo__form-label"
+                          >
+                            New name for Sleep
+                          </label>
                         </div>
+                        <div class="todo__form-section">
+                          <input
+                            id="todo__form-input"
+                            type="text"
+                            class="todo__form-input"
+                          />
+                        </div>
+                        <div class="todo__form-section">
+                          <div class="btn-group">
+                            <button class="btn">
+                              Cancel
+                              <span class="visually-hidden">
+                                renaming Sleep
+                              </span>
+                            </button>
+                            <button class="btn">
+                              Save
+                              <span class="visually-hidden">
+                                new name for Sleep
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+
+                  <!-- Todo 3 -->
+                  <li class="todo">
+                    <div class="todo__view">
+                      <input id="todo__checkbox" type="checkbox" />
+                      <label class="todo-label" htmlFor="todo__checkbox">
+                        Run
+                      </label>
+                      <div class="btn-group">
+                        <button class="btn">
+                          <img
+                            class="btn__icon"
+                            src="./images/edit_white_24dp.svg"
+                            alt=""
+                          />
+                          Edit
+                          <span class="visually-hidden">Run</span>
+                        </button>
+                        <button class="btn btn--danger">
+                          <img
+                            class="btn__icon"
+                            src="./images/delete_white_24dp.svg"
+                            alt=""
+                          />
+                          Delete
+                          <span class="visually-hidden">Run</span>
+                        </button>
                       </div>
-                    </form>
-                  </div>
-                </li>
-
-                <!-- Todo 3 -->
-                <li class="todo">
-                  <div class="todo__view">
-                    <input id="todo__checkbox" type="checkbox" />
-                    <label class="todo-label" htmlFor="todo__checkbox">
-                      Run
-                    </label>
-                    <div class="btn-group">
-                      <button class="btn">
-                        <img
-                          class="btn__icon"
-                          src="./images/edit_white_24dp.svg"
-                          alt=""
-                        />
-                        Edit
-                        <span class="visually-hidden">Run</span>
-                      </button>
-                      <button class="btn btn--danger">
-                        <img
-                          class="btn__icon"
-                          src="./images/delete_white_24dp.svg"
-                          alt=""
-                        />
-                        Delete
-                        <span class="visually-hidden">Run</span>
-                      </button>
                     </div>
-                  </div>
-                </li>
+                  </li>
 
-                <!-- Todo 4 -->
-                <li class="todo">
-                  <div class="todo__view">
-                    <input id="todo__checkbox" type="checkbox" />
-                    <label class="todo-label" htmlFor="todo__checkbox">
-                      Code
-                    </label>
-                    <div class="btn-group">
-                      <button class="btn">
-                        <img
-                          class="btn__icon"
-                          src="./images/edit_white_24dp.svg"
-                          alt=""
-                        />
-                        Edit
-                        <span class="visually-hidden">Code</span>
-                      </button>
-                      <button class="btn btn--danger">
-                        <img
-                          class="btn__icon"
-                          src="./images/delete_white_24dp.svg"
-                          alt=""
-                        />
-                        Delete
-                        <span class="visually-hidden">Code</span>
-                      </button>
+                  <!-- Todo 4 -->
+                  <li class="todo">
+                    <div class="todo__view">
+                      <input id="todo__checkbox" type="checkbox" />
+                      <label class="todo-label" htmlFor="todo__checkbox">
+                        Code
+                      </label>
+                      <div class="btn-group">
+                        <button class="btn">
+                          <img
+                            class="btn__icon"
+                            src="./images/edit_white_24dp.svg"
+                            alt=""
+                          />
+                          Edit
+                          <span class="visually-hidden">Code</span>
+                        </button>
+                        <button class="btn btn--danger">
+                          <img
+                            class="btn__icon"
+                            src="./images/delete_white_24dp.svg"
+                            alt=""
+                          />
+                          Delete
+                          <span class="visually-hidden">Code</span>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </main>

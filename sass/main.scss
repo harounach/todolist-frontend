@@ -4,7 +4,7 @@
 // 03-mixins
 // 04-placeholders
 // 05-animations
-@use "./abstracts/variables" as vars;
+@use "./abstracts/variables";
 
 // <vendors>
 
@@ -19,6 +19,7 @@
 // <components>
 @use "./components/header";
 @use "./components/footer";
+@use "./components/todoapp";
 
 // <pages>
 @use "./pages/home";

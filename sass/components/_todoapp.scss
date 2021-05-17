@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as vars;
+@use "../base/typography" as type;
+
+// todoapp
+.todoapp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  background-color: vars.$surface-color;
+  // todoapp__section
+  .todoapp__section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  // todoapp__counter
+  .todoapp__counter {
+    color: type.$text-high-color;
+  }
+}
