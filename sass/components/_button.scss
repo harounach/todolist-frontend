@@ -40,6 +40,33 @@
   &--lg {
   }
 
+  // btn--36px
+  &--36 {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+  }
+
+  // btn--40px
+  &--40 {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+  }
+
+  // btn--48px
+  &--48 {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+  }
+
+  // btn--outline
+  &--rounded {
+    padding: 0;
+    border-radius: 50%;
+  }
+
   // btn--filter
   &--filter {
     background-color: rgba($color: vars.$secondary-color, $alpha: 0.4);
@@ -53,6 +80,8 @@
 
   // btn--danger
   &--danger {
+    background-color: vars.$error-color;
+    color: vars.$on-error-color;
   }
 
   // btn--left
