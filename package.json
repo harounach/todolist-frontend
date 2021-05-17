@@ -4,10 +4,8 @@
   "description": "Front end for todolist app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "start": "webpack serve --open",
-    "build": "webpack"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,15 +22,6 @@
   },
   "homepage": "https://github.com/harounach/todolist-frontend#readme",
   "devDependencies": {
-    "css-loader": "^5.2.4",
-    "file-loader": "^6.2.0",
-    "html-loader": "^2.1.2",
-    "html-webpack-plugin": "^5.3.1",
-    "sass": "^1.32.12",
-    "sass-loader": "^11.0.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.36.2",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "sass": "^1.32.12"
   }
 }

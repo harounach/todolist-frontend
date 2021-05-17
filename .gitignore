@@ -121,3 +121,5 @@ dist
 *.sass.map
 *.scss.map
 
+# public
+public/css/
