@@ -65,6 +65,8 @@
   &--rounded {
     padding: 0;
     border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid transparent;
   }
 
   // btn--filter
@@ -135,4 +137,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  // btn-group--inline
+  &--inline {
+    width: auto;
+  }
 }
