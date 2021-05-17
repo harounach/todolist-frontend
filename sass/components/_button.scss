@@ -42,12 +42,12 @@
 
   // btn--filter
   &--filter {
-    background-color: rgba($color: vars.$error-color, $alpha: 0.4);
-    color: vars.$on-error-color;
+    background-color: rgba($color: vars.$secondary-color, $alpha: 0.4);
+    color: vars.$on-secondary-color;
 
     // btn--active
     &.btn--active {
-      background-color: vars.$error-color;
+      background-color: vars.$secondary-color;
     }
   }
 
