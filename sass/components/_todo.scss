@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as vars;
+@use "../base/typography" as type;
+
 // todolist
 .todolist {
   width: 100%;
@@ -13,6 +16,8 @@
 .todo {
   width: 100%;
   padding-left: 0.5rem;
+
+  // view template
 
   // todo__view
   &__view {
@@ -72,6 +77,54 @@
       left: -42px;
       top: 16;
       border-radius: 50%;
+    }
+  }
+
+  // Edit template
+
+  // todo__edit
+  &__edit {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  // todo__form
+  &__form {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  // todo__form-section
+  &__form-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  // todo__form-label
+  &__form-label {
+    color: type.$text-high-color;
+    font-size: 1.2rem;
+  }
+
+  // todo__form-input
+  &__form-input {
+    width: 100%;
+    height: 3rem;
+    border: 3px solid vars.$primary-color;
+    padding-left: 0.5rem;
+    margin: 0 0.5rem 0 0;
+    outline: none;
+
+    &:focus {
+      border: 5px solid vars.$primary-color;
     }
   }
 }

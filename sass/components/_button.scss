@@ -30,6 +30,12 @@
     color: vars.$on-primary-color;
   }
 
+  // btn--secondary
+  &--secondary {
+    background-color: vars.$secondary-color;
+    color: vars.$on-secondary-color;
+  }
+
   // btn--form
   &--form {
     height: 3rem;
@@ -38,6 +44,7 @@
 
   // btn--lg
   &--lg {
+    flex-grow: 1;
   }
 
   // btn--36px
