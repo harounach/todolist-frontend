@@ -7,7 +7,176 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <p>Learn to code</p>
+    <div id="root">
+      <div class="page">
+        <header class="page__header header">
+          <h1>TodoList</h1>
+        </header>
+        <main class="page__main main">
+          <div class="page__card-wrapper">
+            <!-- todoapp -->
+            <div class="todoapp">
+              <div class="todoapp__form">
+                <!-- form -->
+                <form class="form">
+                  <h2 className="form__label-wrapper">
+                    <label htmlFor="new-todo-input" className="form__label">
+                      What needs to be done?
+                    </label>
+                  </h2>
+                  <input
+                    type="text"
+                    id="form__input-control"
+                    className="form__input-control"
+                    name="text"
+                  />
+                  <button type="submit" className="btn btn--primary btn--lg">
+                    Add
+                  </button>
+                </form>
+              </div>
+              <!-- filter buttns -->
+              <div class="filters btn-group">
+                <button class="btn btn--filter btn--active">All</button>
+                <button class="btn btn--filter">Active</button>
+                <button class="btn btn--filter">Completed</button>
+              </div>
+              <!-- Todo counter -->
+              <h2 class="todo-counter">4 tasks remaining</h2>
+              <ul class="todolist">
+                <!-- Todo 1 -->
+                <li class="todo">
+                  <div class="todo__view">
+                    <input id="todo__checkbox" type="checkbox" />
+                    <label className="todo-label" htmlFor="todo__checkbox">
+                      Eat
+                    </label>
+                    <div class="btn-group">
+                      <button class="btn">
+                        <img
+                          class="btn__icon"
+                          src="<%= require('./images/edit_white_24dp.svg')%>"
+                          alt=""
+                        />
+                        Edit
+                        <span className="visually-hidden">Eat</span>
+                      </button>
+                      <button class="btn btn--danger">
+                        <img
+                          class="btn__icon"
+                          src="<%= require('./images/delete_white_24dp.svg')%>"
+                          alt=""
+                        />
+                        Delete
+                        <span className="visually-hidden">Eat</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Todo 2 -->
+                <li class="todo">
+                  <div class="todo__edit">
+                    <form class="todo__form">
+                      <div class="todo__form-section">
+                        <label for="todo__form-input" class="todo__form-label">
+                          New name for Sleep
+                        </label>
+                      </div>
+                      <div class="todo__form-section">
+                        <input
+                          id="todo__form-input"
+                          type="text"
+                          class="todo__form-input"
+                        />
+                      </div>
+                      <div class="todo__form-section">
+                        <div class="btn-group">
+                          <button class="btn">
+                            Cancel
+                            <span className="visually-hidden">
+                              renaming Sleep
+                            </span>
+                          </button>
+                          <button class="btn">
+                            Save
+                            <span className="visually-hidden">
+                              new name for Sleep
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+
+                <!-- Todo 3 -->
+                <li class="todo">
+                  <div class="todo__view">
+                    <input id="todo__checkbox" type="checkbox" />
+                    <label className="todo-label" htmlFor="todo__checkbox">
+                      Run
+                    </label>
+                    <div class="btn-group">
+                      <button class="btn">
+                        <img
+                          class="btn__icon"
+                          src="<%= require('./images/edit_white_24dp.svg')%>"
+                          alt=""
+                        />
+                        Edit
+                        <span className="visually-hidden">Run</span>
+                      </button>
+                      <button class="btn btn--danger">
+                        <img
+                          class="btn__icon"
+                          src="<%= require('./images/delete_white_24dp.svg')%>"
+                          alt=""
+                        />
+                        Delete
+                        <span className="visually-hidden">Run</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Todo 4 -->
+                <li class="todo">
+                  <div class="todo__view">
+                    <input id="todo__checkbox" type="checkbox" />
+                    <label className="todo-label" htmlFor="todo__checkbox">
+                      Code
+                    </label>
+                    <div class="btn-group">
+                      <button class="btn">
+                        <img
+                          class="btn__icon"
+                          src="<%= require('./images/edit_white_24dp.svg')%>"
+                          alt=""
+                        />
+                        Edit
+                        <span className="visually-hidden">Code</span>
+                      </button>
+                      <button class="btn btn--danger">
+                        <img
+                          class="btn__icon"
+                          src="<%= require('./images/delete_white_24dp.svg')%>"
+                          alt=""
+                        />
+                        Delete
+                        <span className="visually-hidden">Code</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+        <footer class="page__footer footer">
+          <p class="footer__notice">Copyright Haroun Ach 2021</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

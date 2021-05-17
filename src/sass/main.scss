@@ -13,9 +13,12 @@
 // 02-reset
 // 03-typography
 @use "./base/base";
+@use "./base/reset";
+@use "./base/typography";
 
 // <components>
 
 // <pages>
+@use "./pages/home";
 
 // <themes>
